@@ -1,3 +1,5 @@
 from django.shortcuts import render
-
-# Create your views here.
+from .models import Worker
+def workers(request):
+    workers_queryset = Worker.objects.all()
+    return render(request, "workers.html", {'workers': workers_queryset})

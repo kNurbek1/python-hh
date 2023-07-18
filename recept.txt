@@ -15,6 +15,9 @@ python manage.py runserver
 django-admin startapp core
 python manage.py startapp worker
 
+python manage.py makemigrations
+
+
 
 # git
 git init
